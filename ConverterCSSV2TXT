@@ -1,0 +1,20 @@
+#Author    : Stella Benedicta Laksono
+#Purpose   : Converting Machine Classification excel CSV into PLC Structured Text Format
+#Date      : 23 August 2019
+
+import csv
+
+with open('dummy.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    line_count = 0
+    for row in csv_reader:
+            print(f'\tIF (Barcode_Read.Camera_1 = ${row[4]}$) THEN;')
+            print(f'\tCreatMap_Insert.ITEM_SKU:= ${row[4]}$;')
+            print(f'\tCreatMap_Insert.PRODUCT_DESCRIPTION := ${row[5]}$; ')
+            print(f'\tCreatMap_Insert.NOMINAL_SPEED:= ${row[8]}$;')
+            print(f'\tCreatMap_Insert.PIECES_PER_ITEM_SKU:= ${row[9]}$;')
+            print(f'\tEND_IF;')
+            print(f'\t')
+            line_count += 1
+    #print(f'Processed {line_count} lines.')
+
