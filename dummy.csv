@@ -1,0 +1,7 @@
+,,,,,,,,,,,,
+AREA,TECHNOLOGY,LINE,Machine_Name,Item_Code,Product_Description,Jumlah_Lane,Nominal_Speed_spm,Nominal_Speed_ppm,Pcs/cs,Loading_Time_Minutes,Target_OEE,Target_Output_cs
+DRY PACKING,DEMAR DS,1,qwe,123,fdfvx,21,12,543,1,234,83%,123
+DRY PACKING,DEMAR DS,2,sd,43,xsrgdhn,21,33,78,234,2,83%,456
+DRY PACKING,DEMAR DS,3,as,654,efvd,2,55,56,56,324,83%,34
+DRY PACKING,DEMAR DS,4,xxa,234,srgsgr,1,77,34,3,12,83%,234
+DRY PACKING,DEMAR DS,5,tref,11,erf,12,88,2,34,23,83%,23
